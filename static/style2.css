@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav{
+  height: 1rem;
+  width: 1rem;
+  float: left;
+}
+
+.primary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+  background: #f96816;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+.primary-btn:hover {
+  background-color: #ff7b39;
+}
+#section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 94.5%;
+    height: 20rem;
+    padding-left: 10%;
+}
+#section .bilibili{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding:10px;
+    height:200%;
+    width: 100%;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:left;
+    padding:5px; 
+    height: 40rem;
+    overflow: auto;
+  }
+  #footer .Excel{
+    height: 100%;
+    width: 100%;
+  }

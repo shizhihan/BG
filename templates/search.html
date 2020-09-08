@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/style2.css">
+    <title>WEB CLAWER2</title>
+</head>
+<body>
+
+    <div id="header">
+    <h1>Web Clawer:<a href="/">home</a></h1>
+    </div>
+    
+<!--    <div id="nav">-->
+<!--        <button type="submit" class="primary-btn">DownLoad</button><br>-->
+<!--    </div>-->
+<!--    -->
+    <div id="section">
+        <iframe src="{{url}}" width="100%" height="100%" name="bilibili" scrolling="yes/no/auto">
+        </iframe>
+    </div>
+    
+    <div id="footer">
+        <table>
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>URL</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for result in results%}
+                <tr>
+                    <td>{{result.title}}</td>
+                    <td>{{result.href}}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    </body>
